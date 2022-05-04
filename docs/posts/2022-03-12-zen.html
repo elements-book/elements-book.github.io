@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us" style="font-size: 16.93649pt;">
+
+  <head style="font-size: 16.93649pt;">
+  <!---
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Zen and the art of ∞-categories &middot; Elements of ∞-Category Theory
+    
+  </title>
+
+  
+      
+  
+
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="../css/cormorant-garamond.css">
+  <link rel="stylesheet" href="../css/cormorant-sc.css">
+  <link rel="stylesheet" href="../css/eb-garamond.css">
+  <link rel="stylesheet" href="../css/roboto.css"> 
+
+  <!---
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
+  <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
+  -->
+
+  <!-- RSS and Atom auto-discovery -->
+  <link rel="alternate" type="application/atom+xml" title="Atom feed for ∞-category news" href="../atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS feed for ∞-category news" href="../rss.xml">
+
+  <!-- Javascript enabling mathematics in text -->
+  <!-- script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script -->
+  <!--- deactivate google analytics
+  {% if site.google_analytics_id %}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ site.google_analytics_id }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+  -->
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Homepage of 'The Elements'</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="../">Home</a>
+    <a class="sidebar-nav-item" href="../blog/page1.html">News</a>
+
+    <!--- The code below dynamically generates a sidebar nav of the files in the folder /pages -->
+
+    
+      
+        <a class="sidebar-nav-item" href="../pages/About.html">About</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Biographies.html">Biographies</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Contact.html">Contact</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Errata.html">Errata</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Reviews.html">Reviews</a>
+      
+    
+
+    <a class="sidebar-nav-item" href="https://github.com/elements-book/elements-book.github.io" target="_blank" rel="noopener noreferrer">GitHub project</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <div>
+      <a class="sidebar-icon" href="mailto:eriehl@maths.jhu.edu" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="../images/email_icon.svg" />
+      </a>
+      <a class="sidebar-icon" href="https://github.com/elements-book" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="../images/github_icon.svg" />
+      </a>
+      <a class="sidebar-icon" href="https://twitter.com/EmilyRiehl" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="../images/twitter_icon.svg" />
+      </a>
+      <a class="sidebar-icon" type="application/atom+xml" href="../atom.xml">
+        <img class="sidebar-icon" src="../images/atom_icon.svg" />
+      </a>
+      <a class="sidebar-icon" type="application/rss+xml" href="../rss.xml">
+        <img class="sidebar-icon" src="../images/rss_icon.svg" />
+      </a>
+    </div>
+    <p>
+      <img src="../images/elements.jpg" class="logo" style="display: block; margin-left:auto; margin-right: auto; width: 70%" />
+    </p>
+    <p style="font-size: 0.65rem;">
+      &copy; 2022 <a href="mailto:eriehl@maths.jhu.edu">Emily Riehl & Dom Verity</a><br /> 
+      All rights reserved.
+    </p>
+    <p style="font-size: 0.65rem;">
+      Site created with
+      <a href="https://jaspervdj.be/hakyll" target="_blank" rel="noopener noreferrer">Hakyll</a>.
+      <br />
+      Modified theme
+      <a href="https://github.com/hahey/lanyon-hakyll" target="_blank" rel="noopener noreferrer">lanyon-hakyll</a><br />
+      based on
+      <a href="https://lanyon.getpoole.com/" target="_blank" rel="noopener noreferrer">Lanyon</a>.
+    </p>
+</div>
+
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">Elements of ∞-Category Theory</a>
+            <small>An ∞-Cosmos Compendium</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+          <div class="post">
+  <h1 class="post-title">
+      <a href="../posts/2022-03-12-zen.html">
+        Zen and the art of ∞-categories
+      </a>
+    </h1>
+    <span class="post-date">
+      Posted: March 12, 2022<br /> 
+      Last modified: May  4, 2022
+      
+        <br />Author: Dom Verity
+      
+    </span>
+    <p>Last Friday morning I spoke in the <a href="https://topos.site/topos-colloquium/">Topos Institute Colloquium</a> on the topic of model independent and synthetic approaches to ∞-category theory. This might be considered part of our virtual book tour for <a href="https://www.cambridge.org/core/books/elements-of-category-theory/DAC48C449AB8C2C1B1E528A49D27FC6D"><em>The Elements</em></a>.</p>
+<p>You can <a href="https://youtu.be/qLkRhKaw5DA">view the video</a> of this talk and play along with my <a href="../pdfs/Zen_and_the_art_of_∞-categories.pdf">slides</a>.</p>
+<h2 id="abstract">Abstract</h2>
+<p>You may well have heard the rumour that ∞-category theory is <em>“really just like category theory with a little homotopy theory thrown in”</em>. Inspired by that comment, you might even have headed to a book on ∞-categories or to the <a href="https://ncatlab.org/nlab/show/HomePage"><em>n</em>Lab</a> to find out more, only to find that things in the ∞-world are far from that simple.</p>
+<!--more-->
+<p>Firstly you will have discovered that there is no universal agreement on what an ∞-category actually is. Instead, you’ve been met with a proliferation of ∞-categorical <em>models</em>; simplicially enriched categories, quasi-categories, (iterated) complete Segal spaces, complicial sets, Θ-spaces and so on. Then you discover, to your horror, that each one of these models supports its own particular interpretations of common categorical concepts, some of which appear far more familiar than others. Finally, you realise that the relationships between the category theories developed for each model are also much less than clear.</p>
+<p>If this weren’t enough to leave anyone reaching for the Aspirin bottle, there is more bad news to come. It quickly becomes clear that there exists quite a large gap between the <em>informal</em> language used to describe ∞-categorical arguments, in blog posts and wiki articles, and the corresponding <em>formal</em> arguments expressed in any particular model of ∞-categories. Most of these are given either as concrete constructions with simplicial (or increasingly cubical) objects or as abstract model category theoretic arguments. Now I have no doubt that we <em>“all”</em> love a good simplicial argument, but encoding things in this way does very little to aid our categorical intuition.</p>
+<p><strong>There must be a better way!</strong></p>
+<p>In this talk we discuss recent developments in ∞-technology that seek to address these issues. Specifically, we review the current state of the art in <em>model agnostic</em> ∞-category theory <span class="citation" data-cites="RiehlVerity:2022bb">[2]</span>, which seeks to provide a unified account of ∞-category theory freed from the straight jacket of a specific model. This allows both for the model independent, <em>synthetic</em> development of ∞-categorical results and for the transport of <em>analytically</em> derived such results from one model to another. We shall also see how these techniques are rapidly being reframed in type theoretic terms, through the development of <em>directed type theory</em> <span class="citation" data-cites="RiehlShulman:2017tt Weinberger:2022sy">[1,3]</span>, thereby promising a more natural language for the formal development of ∞-categorical concepts and results.</p>
+<h2 class="unnumbered" id="references">References<br />
+</h2>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-RiehlShulman:2017tt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">E. Riehl, M. Shulman, A type theory for synthetic <em>∞</em>-categories, High. Struct. 1 (2017) 147224.</div>
+</div>
+<div id="ref-RiehlVerity:2022bb" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">E. Riehl, D. Verity, Elements of <em>∞</em>-category theory, Cambridge University Press, 2022.</div>
+</div>
+<div id="ref-Weinberger:2022sy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">J. Weinberger, A synthetic perspective on <em>(∞,1)</em>-category theory: Fibrational and semantic aspects, arXiv Preprint arXiv:2202.13132. (2022).</div>
+</div>
+</div>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src="../public/js/script.js"></script>
+
+  </body>
+
+</html>

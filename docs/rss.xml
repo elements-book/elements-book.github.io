@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>the elements</title>
+        <link>https://elements-book.github.io</link>
+        <description><![CDATA[News related to the book 'Elements of ∞-Category Theory']]></description>
+        <atom:link href="https://elements-book.github.io/rss.xml" rel="self"
+                   type="application/rss+xml" />
+        <lastBuildDate>Sat, 12 Mar 2022 00:00:00 UT</lastBuildDate>
+        <item>
+    <title>Zen and the art of ∞-categories</title>
+    <link>https://elements-book.github.io/posts/2022-03-12-zen.html</link>
+    <description><![CDATA[<p>Last Friday morning I spoke in the <a href="https://topos.site/topos-colloquium/">Topos Institute Colloquium</a> on the topic of model independent and synthetic approaches to ∞-category theory. This might be considered part of our virtual book tour for <a href="https://www.cambridge.org/core/books/elements-of-category-theory/DAC48C449AB8C2C1B1E528A49D27FC6D"><em>The Elements</em></a>.</p>
+<p>You can <a href="https://youtu.be/qLkRhKaw5DA">view the video</a> of this talk and play along with my <a href="../pdfs/Zen_and_the_art_of_∞-categories.pdf">slides</a>.</p>
+<h2 id="abstract">Abstract</h2>
+<p>You may well have heard the rumour that ∞-category theory is <em>“really just like category theory with a little homotopy theory thrown in”</em>. Inspired by that comment, you might even have headed to a book on ∞-categories or to the <a href="https://ncatlab.org/nlab/show/HomePage"><em>n</em>Lab</a> to find out more, only to find that things in the ∞-world are far from that simple.</p>
+]]></description>
+    <pubDate>Sat, 12 Mar 2022 00:00:00 UT</pubDate>
+    <guid>https://elements-book.github.io/posts/2022-03-12-zen.html</guid>
+    <dc:creator>Emily Riehl and Dom Verity</dc:creator>
+</item>
+
+    </channel>
+</rss>
