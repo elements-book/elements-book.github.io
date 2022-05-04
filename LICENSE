@@ -1,6 +1,11 @@
 MIT License
 
-Copyright (c) 2022 elements-book
+Copyright © 2022 Emily Riehl and Dom Verity
+
+Theme components adapted from the Lanyon theme for Hakyll
+(https://github.com/hahey/lanyon-hakyll.git) and are
+
+Copyright © 2020 Heuna Kim
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

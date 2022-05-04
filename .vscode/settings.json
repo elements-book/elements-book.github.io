@@ -1,0 +1,14 @@
+{
+    "cSpell.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "never",
+    "svg.preview.background": "transparent",
+    "workbench.colorTheme": "Solarized Light",
+    "ltex.additionalRules.motherTongue": "en-GB",
+    "editor.quickSuggestions": {  
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "ltex.completionEnabled": true,
+    "ltex.language": "en-GB",
+}

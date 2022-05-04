@@ -1,0 +1,8 @@
+documentclass: extarticle
+fontsize: 12pt
+papersize: a4
+
+geometry:
+- scale = 0.8
+
+cref: true

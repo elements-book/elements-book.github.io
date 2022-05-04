@@ -1,0 +1,70 @@
+% Site-wide standard header latex files
+
+% Imports of general utility packages
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{realscripts}
+\usepackage{etoolbox}
+\usepackage{amsxtra}
+\usepackage{mathtools}
+
+% Setup tikz and tikz cd
+\usepackage{tikz}
+
+\usetikzlibrary{cd}
+\usetikzlibrary{matrix}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{trees}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{graphs}
+\usetikzlibrary{calc}
+
+% Conditional set if we are generating images
+\newif\ifgenimages
+\makeatletter
+\@ifclassloaded{standalone}\genimagestrue
+\makeatother
+
+% Setup macros and environments for generation of equation images
+\ifgenimages
+    \makeatletter
+    \newbox\doms@ship@box
+    \newcounter{doms@eqnno}
+    \newenvironment{shipper}[1]{%
+        \stepcounter{doms@eqnno}%
+        \setbox\doms@ship@box=%
+            \hbox{\begingroup\aftergroup}\(#1{\begingroup\aftergroup}}{\endgroup\)\endgroup%
+        \typeout{Preview: eqn (\arabic{doms@eqnno})\space%
+            dims \the\dp\doms@ship@box,\the\ht\doms@ship@box,\the\wd\doms@ship@box.}%
+        \box\doms@ship@box}
+    \standaloneenv{shipper}
+    \makeatother
+\else
+    \newenvironment{shipper}[2]{}{}
+\fi
+
+%\tikzset{
+%  commutative diagrams/.cd, 
+%  arrow style=tikz, 
+%  diagrams={>=Straight Barb, semithick}
+%}
+
+% Font for Japanese characters, mainly used to annotate
+% the Yoneda embedding
+
+\newcommand\japanese{\fontspec{Harano Aji Mincho}}
+
+% Differential styling of diagrams, colours, font sizes and so
+% forth in normal and image generation modes
+
+\ifgenimages%
+    \def\adjustcolor{\color[HTML]{515151}}
+    \AtBeginDocument{\adjustcolor}
+    \everymath{\adjustcolor}
+    \everydisplay{\adjustcolor}
+
+    \tikzset{every picture/.style={scale=1.41137}}
+\fi

@@ -1,0 +1,7 @@
+documentclass: standalone
+fontsize: 17pt
+classoption:
+- class=extarticle
+- crop=true
+- border=0pt
+- multi=true

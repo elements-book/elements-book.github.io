@@ -1,0 +1,15 @@
+eqnPrefix: 
+  - "Equation" 
+  - "Equations"
+figPrefix:
+  - "Figure"
+  - "Figures"
+tblPrefix:
+  - "Table"
+  - "Tables"
+lstPrefix:
+  - "List"
+  - "Lists"
+secPrefix:
+  - "Section"
+  - "Sections"

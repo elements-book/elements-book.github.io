@@ -1,0 +1,317 @@
+% Site wide macro definitions
+
+% *****************************************************************
+% ** Description: Various macros for box twiddling
+% *****************************************************************
+
+\makeatletter
+
+\def\clap#1{\hbox to 0pt{\hss#1\hss}}
+\def\mathllap{\mathpalette\mathllap@}
+\def\mathrlap{\mathpalette\mathrlap@}
+\def\mathclap{\mathpalette\mathclap@}
+\def\mathllap@#1#2{\llap{$\m@th#1{#2}$}}
+\def\mathrlap@#1#2{\rlap{$\m@th#1{#2}$}}
+\def\mathclap@#1#2{\clap{$\m@th#1{#2}$}}
+
+\def\makeslashed#1#2#3#4#5{#1{\mathpalette{\sla@{#2}{#3}{#4}}{#5}}}
+
+\def\@mathlower#1#2#3{\setbox0=\hbox{$\m@th#2{#3}$}\lower#1\ht0\box0}
+\def\mathlower#1#2{\mathpalette{\@mathlower{#1}}{#2}}
+
+\def\@mathscale#1#2#3{\scalebox{#1}{$\m@th#2{#3}$}}
+\def\mathscale#1#2{\mathpalette{\@mathscale{#1}}{#2}}
+
+\def\@mathadj#1#2#3#4{\setbox0=\hbox{\scalebox{#1}{$\m@th#3{#4}$}}\lower#2\ht0\box0}
+\def\mathadj#1#2#3{\mathpalette{\@mathadj{#1}{#2}}{#3}}
+
+\makeatother
+
+% ***************************************************************
+% ** Description:      Some useful mathematical operators.
+% ***************************************************************
+
+% ordinal stuff
+
+\newcommand{\st}{^{\text{st}}}
+\newcommand{\nd}{^{\text{nd}}}
+\newcommand{\rd}{^{\text{rd}}}
+\renewcommand{\th}{^{\text{th}}}
+
+% General mathematical connectives etc.
+
+\newcommand{\defeq}{\coloneq}
+
+% Operators
+
+\makeatletter
+\def\newmop{\@ifstar{\@newmop m}{\@newmop o}}
+\def\@newmop#1{\@ifnextchar[{\@@newmop #1}{\@@@newmop #1}}
+\def\@@newmop#1[#2]{\@declmathop #1#2}
+\def\@@@newmop#1#2{\expandafter\@declmathop\expandafter #1\csname #2\endcsname{#2}}
+\makeatother
+
+% General operations on maps etc.
+\newmop{dom}
+\newmop{cod}
+\newmop{id}
+\newmop{obj}
+\newmop{arr}
+\newmop{ev}
+\newmop{el}
+\newmop{im}
+
+% ***************************************************************
+% ** Description:      General categorical notations
+% ***************************************************************
+
+\newcommand{\comma}{\mathbin{\downarrow}}
+
+%iso-commas
+
+%\newcommand{\itimes}{%
+%  \mathrel{\vbox{\offinterlineskip\ialign{%
+ %   \hfil##\hfil\cr
+ %   $\scriptscriptstyle\sim$\cr
+
+%    $\times$\cr
+%}}}}
+\newcommand{\icomma}[1]{\mathbin{\mathop{\dottimes}\limits_{#1}}}
+
+\newcommand{\timesdot}{%
+            \mathrel{\raisebox{-.1em}{%
+            \reflectbox{\rotatebox[origin=c]{180}{$\dottimes$}}}}}
+
+\newcommand{\unit}{\eta}
+\newcommand{\counit}{\epsilon}
+
+\newcommand{\pwr}{\pitchfork}
+
+%tensor and cotensor bifunctors
+\newcommand{\ctns}[2]{{{#2}^{#1}}}%weight first, then variable
+\newcommand{\tns}[2]{{#1\otimes #2}}
+
+%weighted limit and colimit bifunctors
+\newcommand{\wlim}[3][]{{\lim\nolimits_{#2}^{#1}{#3}}}
+\newcommand{\hlim}[2]{{\lim\nolimits_{#1}^{\simeq}{#2}}}
+\newcommand{\wcolim}[3][]{{\colim\nolimits_{#2}^{#1}{#3}}}
+\newcommand{\leibwlim}[3][]{{\widehat{\lim}_{#2}^{#1}{#3}}}
+\newcommand{\leibwcolim}[3][]{{\widehat{\colim}_{#2}^{#1}{#3}}}
+\newmop*{oplax}
+
+% for yoneda - this is the Unicode character "HIRAGANA LETTER YO" (よねだ).
+\newcommand{\yo}{\text{\japanese よ}}
+
+% Duals / Superscripted postfix ops
+
+\newcommand{\op}{^{\mathord{\text{\rm op}}}}
+\newcommand{\co}{^{\mathord{\text{\rm co}}}}
+\newcommand{\coop}{^{\mathord{\text{\rm coop}}}}
+
+%for fiber and cofiber sequences
+%\newmop{ker}
+\newmop[\fiber]{fib}
+\newmop{coker}
+\newmop{cofib}
+
+% ***************************************************************
+% ** Description:      Standard categories.
+% ***************************************************************
+
+\newcommand{\catfour}{{\Bbbfour}}%texdoc unimath-symbols.pdf
+\newcommand{\catthree}{{\Bbbthree}}%texdoc unimath-symbols.pdf
+\newcommand{\cattwo}{{\Bbbtwo}}
+\newcommand{\catone}{{\Bbbone}}
+\newcommand{\catn}{{\mathbb{n}}}
+\newcommand{\catnone}{{\catn\!+\!\catone}}
+\newcommand{\catntwo}{{\catn\!+\!\cattwo}}
+\newcommand{\iso}{{\BbbI}}
+
+\newcommand{\Del}{\mbfDelta}
+\newcommand{\eDel}{\mbfDelta_{\mathord{\text{\rm epi}}}}
+\newcommand{\Delt}{\mbfDelta_{\top}}%formerly_{\infty}
+\newcommand{\Delb}{\mbfDelta_{\bot}}%formerly_{-\infty}
+\newcommand{\Delbt}{\mbfDelta_{\bot,\top}}%for the intersection
+
+\newcommand{\NN}{{\mathbb{N}}}%for the graph underlying \mbfomega
+
+\newcommand{\Thet}{\mbfTheta}
+% *****************************************************************
+% ** Description: Notation for quasi-categories and cosmoi
+% *****************************************************************
+
+\newcommand{\qop}[1]{{\mathord{\mathsf{#1}}}}
+
+%enriched (i.e. all large) categories.
+\newcommand{\ec}[1]{{\mathord{\mathcal{#1}}}}
+\let\eop=\ec
+\newcommand{\cl}[1]{{\mathord{\symtt{#1}}}}
+
+%cosmoi
+\newcommand{\qCat}{\eop{QCat}}
+\newcommand{\Sp}[1]{{\Thet_{#1}\text{-}\eop{Sp}}}
+\newcommand{\Segal}{\eop{Segal}}
+\newcommand{\Rezk}{\eop{Rezk}}%for Rezk objects
+\newcommand{\CSS}{\eop{CSS}}%###also consider calling Rezk?
+\newcommand{\Cat}{\eop{Cat}}%###the cosmos version, which we might never use
+\newcommand{\Comp}[1]{#1\text{-}\eop{Comp}}%saturated {#1}-trivial weak complicial sets
+\newcommand{\coCart}{\eop{coCart}}
+\newcommand{\Cart}{\eop{Cart}}
+\newcommand{\Fib}{\eop{Fib}}
+\newcommand{\vDblCat}{\eop{vDblCat}}
+\newcommand{\VE}{\eop{VE}}%for folds signature for virtual equipments
+
+\newcommand{\dCart}{\eop{dCart}}%discrete cartesian fibrations
+\newcommand{\dCoCart}{\eop{dCoCart}}%discrete cocartesian fibrations
+
+\newcommand{\Lari}{\eop{Lari}}
+\newcommand{\Rari}{\eop{Rari}}
+\newcommand{\Stab}{\eop{Stab}}
+
+%discrete cosmoi
+\newcommand{\Disc}{\eop{Disc}}
+\newcommand{\Kan}{\eop{Kan}}
+\newcommand{\Mod}{\eop{Mod}}
+
+%related categories
+\newcommand{\Space}{\eop{Space}}
+\newcommand{\sSet}{\eop{sSet}}
+\newcommand{\cSet}{\eop{cSet}}%cubical sets; for a note about unstraightening
+%\newcommand{\ssSet}{\eop{SSSet}}
+\newcommand{\msSet}{\sSet^+}%for MARKED simplicial sets; replacing STRAT.
+\newcommand{\asSet}{\sSet_+}%for AUGMENTED simplicial sets
+\newcommand{\mzsSet}{\sSet^{+_0}}%for MARKED simplicial sets with marked vertices
+
+%categories
+\newcommand{\Set}{\eop{Set}}
+\newcommand{\Gph}{\eop{Gph}}
+\newcommand{\sCat}{\sSet\text{-}\Cat}
+\newcommand{\msCat}{\msSet\text{-}\Cat}
+\newcommand{\mzsCat}{\mzsSet\text{-}\Cat}
+\newcommand{\sCptd}{\sSet\text{-}\eop{Cptd}}
+\newcommand{\msCptd}{\msSet\text{-}\eop{Cptd}}
+\newcommand{\sRCptd}{\sSet\text{-}\eop{rCptd}}
+\newcommand{\kanCat}{\Kan\text{-}\Cat}%for the subcategory of kan-complex enriched simplicial cats?
+\newcommand{\twoCat}{2\text{-}\Cat}
+\newcommand{\eCat}[1]{{#1}\text{-}\Cat}%for enriched categories
+\newcommand{\FrExt}{\eop{FrExt}}
+
+%enriched things/Kan-/quasi-###the "c" standing for "cosmos"?
+\newcommand{\cA}{\ec{A}}
+\newcommand{\cB}{\ec{B}}
+\newcommand{\cC}{\ec{C}}
+\newcommand{\cD}{\ec{D}}
+\newcommand{\cE}{\ec{E}}
+\newcommand{\cF}{\ec{F}}
+\newcommand{\cG}{\ec{G}}
+\newcommand{\cH}{\ec{H}}
+\newcommand{\cI}{\ec{I}}%for inverse categories
+\newcommand{\cJ}{\ec{J}}%for indexing shapes that might be enriched, I guess? or maybe use \cA?
+\newcommand{\cK}{\ec{K}}
+\newcommand{\cL}{\ec{L}}
+\newcommand{\cM}{\ec{M}}
+\newcommand{\cN}{\ec{N}}
+\newcommand{\cP}{\ec{P}}
+\newcommand{\cQ}{\ec{Q}}
+\newcommand{\cR}{\ec{R}}%symbol seems to be incorrect in alternate 2 of Asana.
+\newcommand{\cS}{\ec{S}}%for Kan enriched
+\newcommand{\cT}{\ec{T}}
+\newcommand{\cU}{\ec{U}}
+\newcommand{\cV}{\ec{V}}%for the base of enrichment (=cartesian closed since why not?)
+\newcommand{\cW}{\ec{W}}%for the other base of enrichment (=cartesian closed 
+
+%###trial notation for the homotopy 2-category
+\newcommand{\h}{\mathfrak{h}}
+
+%### virtual equipment of modules
+\newcommand{\MMod}{\mathord{\mathbb{M}\mathrm{od}}}
+\newcommand{\CC}{{\mathbb{C}}}% generic virtual equipments
+\newcommand{\PP}{{\mathbb{P}}}
+
+% ###classes in a model category/cat of fibrant objects in case we want to change the font
+\newcommand{\CF}{\cl{C}}
+\newcommand{\FB}{\cl{F}}
+\newcommand{\WE}{\cl{W}}
+\newcommand{\classA}{\cl{A}}
+\newcommand{\classB}{\cl{B}}
+\newcommand{\classC}{\cl{C}}
+\newcommand{\classE}{\cl{E}}
+\newcommand{\classF}{\cl{F}}
+\newcommand{\classI}{\cl{I}}
+\newcommand{\classJ}{\cl{J}}
+\newcommand{\classK}{\cl{K}}
+\newcommand{\classL}{\cl{L}}
+\newcommand{\classM}{\cl{M}}
+\newcommand{\classR}{\cl{R}}
+
+% Various hom notations.
+\newcommand{\Fun}{\qop{Fun}}%mapping spaces in cosmoi
+\newcommand{\hFun}{\qop{hFun}}%hom categories in homotopy 2-categories
+\newcommand{\cFun}[1]{{\qop{Fun}_{#1}^{\cart}}}%mapping spaces in cartesian cosmoi
+\newcommand{\Hom}{\qop{Hom}}%all other homs in large/enriched categories
+\newcommand{\Map}{\qop{Map}}%mapping space (module) for ∞-categories
+\newcommand{\Icon}{\qop{Icon}}%hom simplicial sets between simplicial categories
+
+% ***************************************************************
+% ** Description:      Abstract homotopy theory.
+% ***************************************************************
+
+% Elementary operators in the theory of (stratified) simplicial sets.
+
+\newcommand{\face}{\delta}
+\newcommand{\degen}{\sigma}
+
+% face by vertices (fbv)
+\newcommand{\sembl}{\mathopen{\mathord[\mkern-3mu\mathord[}}
+\newcommand{\sembr}{\mathclose{\mathord]\mkern-3mu\mathord]}}
+\newcommand{\fbv}[1]{\{{#1}\}}
+
+% other simplicial notation
+
+\newmop{sk}
+\newmop{cosk}
+\newmop{res}
+\newmop{trunc}
+\newmop{ir}%for interval representation
+
+\newcommand{\join}{\mathbin\star}
+\newcommand{\fatjoin}{\mathbin\diamond}
+\newmop{dec}
+\newmop{fatdec}
+\newmop{slc}
+\newmop{fatslc}
+\newmop{cyl}
+\newcommand{\slicel}[2]{\vphantom{#2}^{{#1}/}\mkern-2mu{#2}}
+\newcommand{\slicer}[2]{{#1\mkern-1mu}_{{}/{#2}}}
+
+%for the lax slice
+%\newcommand{\sslice}{{\mathord{\mathord{/}\!\mathord{/}}}}
+\newcommand{\laxslicel}[2]{\vphantom{#2}^{{#1}\sslash}\mkern-2mu{#2}}
+\newcommand{\laxslicer}[2]{{#1\mkern-1mu}_{{}{\sslash}{#2}}}
+
+% Boundary operator.
+\newcommand{\bound}{\partial}
+
+% Simplicial dual.
+\newcommand{\sdual}{^\circ}
+
+%homotopy categories
+
+%\newmop{ho} %###tweak: too much space now
+\newcommand{\ho}{\qop{h}}
+
+% Leibniz...
+% ... for binary operators like join and product
+\newcommand{\leib}[1]{\mathbin{\widehat{#1}}}
+% ... for prefix operators like lim, colim and decalage.
+\newcommand{\uleib}[1]{\widehat{#1}}
+
+% probably should change the first of those to a normal hat and grep the
+% text to make sure that the right variant is being used in various places.
+
+% nerves etc
+
+\newcommand{\hC}{\mfrakC}
+\newcommand{\hN}{\mfrakN}
+\newcommand{\mhC}{\mfrakC^+\!}
+\newcommand{\mhN}{\mfrakN^+}

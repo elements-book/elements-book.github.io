@@ -1,0 +1,26 @@
+/* cormorant-sc-regular - latin */
+@font-face {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/CormorantSC-Regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('/fonts/CormorantSC-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/CormorantSC-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/CormorantSC-Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/CormorantSC-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+  
+  /* cormorant-sc-700 - latin */
+  @font-face {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/CormorantSC-Bold.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('/fonts/CormorantSC-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/CormorantSC-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/CormorantSC-Bold.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/CormorantSC-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+  

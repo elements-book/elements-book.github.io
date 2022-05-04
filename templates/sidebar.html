@@ -1,0 +1,64 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>$site-description$</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item$if(home)$ active$endif$" href="/">Home</a>
+    <a class="sidebar-nav-item$if(blog)$ active$endif$" href="/blog/page1.html">News</a>
+
+    <!--- The code below dynamically generates a sidebar nav of the files in the folder /pages -->
+
+    $for(list_pages)$
+      $if(title)$
+        <a class="sidebar-nav-item$if(eval(title))$ active$endif$" href="$node-url$">$title$</a>
+      $endif$
+    $endfor$
+
+    <a class="sidebar-nav-item" href="$github-repo$" target="_blank" rel="noopener noreferrer">GitHub project</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <div>
+      <a class="sidebar-icon" href="mailto:$site-email$" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="/images/email_icon.svg"/>
+      </a>
+      <a class="sidebar-icon" href="$github-url$" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="/images/github_icon.svg"/>
+      </a>
+      <a class="sidebar-icon" href="$twitter-url$" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="/images/twitter_icon.svg"/>
+      </a>
+      <a class="sidebar-icon" type="application/atom+xml" href="/atom.xml">
+        <img class="sidebar-icon" src="/images/atom_icon.svg"/>
+      </a>
+      <a class="sidebar-icon" type="application/rss+xml" href="/rss.xml">
+        <img class="sidebar-icon" src="/images/rss_icon.svg"/>
+      </a>
+    </div>
+    <p>
+      <img src="/images/elements.jpg" class=logo 
+           style="display: block; margin-left:auto; margin-right: auto; width: 70%"/>
+    </p>
+    <p style="font-size: 0.65rem;">
+      &copy; $copy-year$ <a href="mailto:$site-email$">$site-author$</a><br/> 
+      All rights reserved.
+    </p>
+    <p style="font-size: 0.65rem;">
+      Site created with
+      <a href="https://jaspervdj.be/hakyll" target="_blank" rel="noopener noreferrer">Hakyll</a>.
+      <br/>
+      Modified theme
+      <a href="https://github.com/hahey/lanyon-hakyll" target="_blank" rel="noopener noreferrer">lanyon-hakyll</a><br/>
+      based on
+      <a href="https://lanyon.getpoole.com/" target="_blank" rel="noopener noreferrer">Lanyon</a>.
+    </p>
+</div>
+
+</div>
