@@ -20,7 +20,7 @@ date: 3^rd^ May 2022
 \end{wrapfigure}
 ```
 
-The book [*Elements of ∞-Category Theory*](https://www.cambridge.org/core/books/elements-of-category-theory/DAC48C449AB8C2C1B1E528A49D27FC6D) by Emily Riehl and Dom Verity has just been published (February 2022) by [Cambridge University Press](https://www.cambridge.org) as volume 194 of the series [Cambridge Studies in Advanced Mathematics](https://www.cambridge.org/core/series/cambridge-studies-in-advanced-mathematics/0A5F361E5A5E9D3EFE58F53613C0D307). 
+The book [*Elements of ∞-Category Theory*](https://www.cambridge.org/core/books/elements-of-category-theory/DAC48C449AB8C2C1B1E528A49D27FC6D) by Emily Riehl and Dom Verity has just been published (January 2022) by [Cambridge University Press](https://www.cambridge.org) as volume 194 of the series [Cambridge Studies in Advanced Mathematics](https://www.cambridge.org/core/series/cambridge-studies-in-advanced-mathematics/0A5F361E5A5E9D3EFE58F53613C0D307). 
 
 <!--more-->
 
