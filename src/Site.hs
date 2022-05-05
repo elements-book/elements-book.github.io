@@ -27,7 +27,7 @@ main = hakyllWith config $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "pdfs/*.pdf" $ do
+    match ("pdfs/*.pdf" .||. "elements.pdf" .||. "more-elements.pdf") $ do
         route   idRoute
         compile copyFileCompiler
 
