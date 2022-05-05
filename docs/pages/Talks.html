@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us" style="font-size: 16.93649pt;">
+
+  <head style="font-size: 16.93649pt;">
+  <!---
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Talks &middot; Elements of ∞-Category Theory
+    
+  </title>
+
+  
+      
+  
+
+  <link rel="stylesheet" href="../css/poole.css">
+  <link rel="stylesheet" href="../css/syntax.css">
+  <link rel="stylesheet" href="../css/lanyon.css">
+  <link rel="stylesheet" href="../css/cormorant-garamond.css">
+  <link rel="stylesheet" href="../css/cormorant-sc.css">
+  <link rel="stylesheet" href="../css/eb-garamond.css">
+  <link rel="stylesheet" href="../css/roboto.css"> 
+
+  <!---
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
+  <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
+  -->
+
+  <!-- RSS and Atom auto-discovery -->
+  <link rel="alternate" type="application/atom+xml" title="Atom feed for ∞-category news" href="../atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS feed for ∞-category news" href="../rss.xml">
+
+  <!-- Javascript enabling mathematics in text -->
+  <!-- script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script -->
+  <!--- deactivate google analytics
+  {% if site.google_analytics_id %}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ site.google_analytics_id }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+  -->
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Homepage of 'The Elements'</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="../">Home</a>
+    <a class="sidebar-nav-item" href="../blog/page1.html">News</a>
+
+    <!--- The code below dynamically generates a sidebar nav of the files in the folder /pages -->
+
+    
+      
+        <a class="sidebar-nav-item" href="../pages/About.html">About</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Biographies.html">Biographies</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Contact.html">Contact</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Errata.html">Errata</a>
+      
+    
+      
+        <a class="sidebar-nav-item" href="../pages/Reviews.html">Reviews</a>
+      
+    
+      
+        <a class="sidebar-nav-item active" href="../pages/Talks.html">Talks</a>
+      
+    
+
+    <a class="sidebar-nav-item" href="https://github.com/elements-book/elements-book.github.io" target="_blank" rel="noopener noreferrer">GitHub project</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <div>
+      <a class="sidebar-icon" href="mailto:eriehl@maths.jhu.edu" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="../images/email_icon.svg" />
+      </a>
+      <a class="sidebar-icon" href="https://github.com/elements-book" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="../images/github_icon.svg" />
+      </a>
+      <a class="sidebar-icon" href="https://twitter.com/EmilyRiehl" target="_blank" rel="noopener noreferrer">
+        <img class="sidebar-icon" src="../images/twitter_icon.svg" />
+      </a>
+      <a class="sidebar-icon" type="application/atom+xml" href="../atom.xml">
+        <img class="sidebar-icon" src="../images/atom_icon.svg" />
+      </a>
+      <a class="sidebar-icon" type="application/rss+xml" href="../rss.xml">
+        <img class="sidebar-icon" src="../images/rss_icon.svg" />
+      </a>
+    </div>
+    <p>
+      <img src="../images/elements.jpg" class="logo" style="display: block; margin-left:auto; margin-right: auto; width: 70%" />
+    </p>
+    <p style="font-size: 0.65rem;">
+      &copy; 2022 <a href="mailto:eriehl@maths.jhu.edu">Emily Riehl & Dom Verity</a><br /> 
+      All rights reserved.
+    </p>
+    <p style="font-size: 0.65rem;">
+      Site created with
+      <a href="https://jaspervdj.be/hakyll" target="_blank" rel="noopener noreferrer">Hakyll</a>.
+      <br />
+      Modified theme
+      <a href="https://github.com/hahey/lanyon-hakyll" target="_blank" rel="noopener noreferrer">lanyon-hakyll</a><br />
+      based on
+      <a href="https://lanyon.getpoole.com/" target="_blank" rel="noopener noreferrer">Lanyon</a>.
+    </p>
+</div>
+
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="../" title="Home">Elements of ∞-Category Theory</a>
+            <small>An ∞-Cosmos Compendium</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+          <div class="page">
+  <h1 class="page-title">Talks</h1>
+     <h2 id="mini-courses">Mini-courses</h2>
+<ul>
+<li><a href="https://www.newton.ac.uk/seminar/20180702100011001/">The model-independent theory of (∞,1)-categories</a> delivered at the Isaac Newton Institute for Mathematical Sciences at the University of Cambridge as part of the workshop <a href="https://www.newton.ac.uk/event/hhhw01/">Higher structures in homotopy theory</a> to open the semester program <a href="https://www.newton.ac.uk/event/hhh/">Homotopy Harnessing Higher Structures</a>: <a href="https://www.newton.ac.uk/seminar/20180702100011001/">lecture 1</a>, <a href="https://www.newton.ac.uk/seminar/20180703100011001/">lecture 2</a>, <a href="https://www.newton.ac.uk/seminar/20180704100011001/">lecture 3</a>, <a href="https://www.newton.ac.uk/seminar/20180705100011001/">lecture 4</a>.</li>
+<li>A mini course <a href="https://emilyriehl.github.io/files/scratch.pdf">∞-category theory from scratch</a> given at the <a href="https://www.epfl.ch/labs/hessbellwald-lab/seminar/ytm2015/">2015 Young Topologists’ Meeting</a>: <a href="https://tube.switch.ch/videos/8d2e27f1">lecture 1</a>, <a href="https://tube.switch.ch/videos/4c002b49">lecture 2</a>, <a href="https://tube.switch.ch/videos/abff9b56">lecture 3</a>, <a href="https://tube.switch.ch/videos/ffa790bd">lecture 4</a>.</li>
+</ul>
+<h2 id="technical-lectures">Technical lectures</h2>
+<ul>
+<li><a href="http://www.fields.utoronto.ca/talks/macrocosm-principle-cartesian-fibrations">A macrocosm principle for cartesian fibrations</a> given at the <a href="http://www.fields.utoronto.ca/activities/19-20/mirrorsymmetry-non-archimedean">Workshop on Higher Structures in Geometry and Physics</a> at the Fields Institute.</li>
+<li><a href="https://emilyriehl.github.io/files/ct2019.pdf">A formal theory for ∞-categories</a>, slides from the <a href="https://conferences.inf.ed.ac.uk/ct2019/">2019 International Category Theory Conference</a> in Edinburgh.</li>
+<li><a href="https://emilyriehl.github.io/files/Leeds-HTT-UF.pdf">The synthetic approach to ∞-category theory</a> from the <a href="https://conferences.leeds.ac.uk/httuf/">Summer School on Higher Topos Theory and Univalent Foundations</a> at Leeds.</li>
+<li><a href="https://www.ias.edu/video/VoevodskyMemConf-2018/0912-EmilyRiehl">The synthetic theory of ∞-categories vs the synthetic theory of ∞-categories</a> given at the <a href="https://www.ias.edu/math/vvmc2018">Vladimir Voevodsky Memorial Conference</a> at IAS; <a href="https://emilyriehl.github.io/files/Voevodsky.pdf">slides</a>.</li>
+<li><a href="https://www.birs.ca/events/2018/5-day-workshops/18w5147/videos/watch/201805111130-Riehl.html">A proof of the model-independence of ∞-category theory</a> delivered at the workshop <a href="https://www.birs.ca/events/2018/5-day-workshops/18w5147">∞-Categories, ∞-Operads, and their Applications</a> at the Casa Matématica Oaxaca.</li>
+<li><a href="https://emilyriehl.github.io/files/ct2018.pdf">A proof of the model-independence of (∞,1)-category theory</a>, slides from a talk given at the <a href="http://www.mat.uc.pt/~ct2018/">2018 International Category Theory Conference</a>.</li>
+<li><a href="https://youtu.be/ge-9m1SsEmc">The synthetic theory of ∞-categories vs the synthetic theory of ∞-categories</a>, from the <a href="https://uwo.ca/math/faculty/kapulkin/seminars/hottest.html">Homotopy Type Theory Electronic Seminar Talks</a>; <a href="https://emilyriehl.github.io/files/HoTTEST.pdf">slides</a>.</li>
+<li><a href="https://www.msri.org/workshops/797/schedules/22696">Foundations of (∞,2)-category theory</a>, a talk at the <a href="https://www.msri.org/workshops/797">Women in Topology</a> workshop at MSRI outlining a research program.</li>
+<li><a href="https://video-archive.fields.utoronto.ca/view/5048">Towards a synthetic theory of (∞,1)-categories</a> given at the 2016 <a href="http://www.fields.utoronto.ca/activities/15-16/homotopy-type">Workshop on Homotopy Type Theory and Univalent Foundations of Mathematics</a> at the Fields Institute.</li>
+<li><a href="https://www.msri.org/workshops/689/schedules/18223">The formal theory of adjunctions, monads, algebras, and descent</a>, from the workshop <a href="https://www.msri.org/workshops/689">Reimagining the Foundations of Algebraic Topology</a> at MSRI; <a href="https://emilyriehl.github.io/files/reimagining.pdf">slides</a>.</li>
+<li><a href="https://www.msri.org/workshops/684/schedules/17862">Limits of quasi-categories with (co)limits</a>, from the <a href="https://www.msri.org/workshops/684">Connections for Women</a> workshop at MSRI.</li>
+<li><a href="https://emilyriehl.github.io/files/jmm2014.pdf">Homotopy coherent adjunctions</a>, slides from the <a href="https://nilesjohnson.net/homotopy-special-session-2014.html">AMS Special Session on Homotopy Theory</a> at the 2014 Joint Mathematics Meetings.</li>
+<li><a href="https://emilyriehl.github.io/files/eilenberg100.pdf">The formal theory of homotopy coherent monads</a>, slides from the Samuel Eilenberg Centenary Conference.</li>
+</ul>
+<h2 id="colloquia">Colloquia</h2>
+<ul>
+<li><a href="https://www.matrix-inst.org.au/events/online-seminar-march-2021-a-prof-emily-riehl/">Elements of ∞-Category Theory</a>, a colloquium hosted by the <a href="https://www.matrix-inst.org.au/">Matrix Institute</a>; <a href="https://emilyriehl.github.io/files/elements-colloquium.pdf">slides</a>.</li>
+<li><a href="https://youtu.be/ZVreRhrtUyM">Elements of ∞-Category Theory</a>, a virtual talk for the Mathematical Picture Language seminar at Harvard; <a href="https://emilyriehl.github.io/files/elements-colloquium.pdf">slides</a>.</li>
+<li><a href="https://youtu.be/A6hXn6QCu0k">∞-category theory for undergraduates</a>, a talk in the <a href="https://logic.berkeley.edu/events.html">Berkeley Logic Colloquium</a>; <a href="https://emilyriehl.github.io/files/berkeley-logic.pdf">slides</a>.</li>
+<li><a href="https://emilyriehl.github.io/files/CIRM-complicial.pdf">The complicial sets model of higher ∞-categories</a>, slides from <a href="https://conferences.cirm-math.fr/1959.html">Structures supérieures</a> at CIRM.</li>
+<li><a href="https://emilyriehl.github.io/files/freed60.pdf">The complicial sets model of higher ∞-categories</a> slides from <a href="https://web.ma.utexas.edu/topqft/">Between Topology and Quantum Field Theory: A conference in celebration of Dan Freed’s 60th birthday</a>.</li>
+<li><a href="https://emilyriehl.github.io/files/perimeter.pdf">The complicial sets model of higher ∞-categories</a>, slides from a colloquium given at the Perimeter Institute.</li>
+<li><a href="https://cgp.ibs.re.kr/activities/seminars/278/980">A universal approach to universal algebra</a>, a colloquium given at the Center for Geometry and Physics in Pohang, Korea.</li>
+<li><a href="https://emilyriehl.github.io/files/GSTGC.pdf">Quasi-category theory you can use</a>, slides from the Graduate Student Topology and Geometry Conference at UT Austin.</li>
+</ul>
+<h2 id="general-audience">General audience</h2>
+<ul>
+<li><a href="https://youtu.be/QpDTcefoWEQ">A brief introduction to ∞-cosmoi and higher category theory</a>, filmed by <a href="https://www.quantamagazine.org/emily-riehl-conducts-the-mathematical-orchestra-from-the-middle-20200902/">Quanta Magazine</a>.</li>
+<li><a href="https://emilyriehl.github.io/files/Frontier.pdf">A formal language for ∞-category theory</a>, the <a href="https://youtu.be/WLkMBMUk48E">2020 President’s Frontier Award lecture</a>.</li>
+</ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src="../public/js/script.js"></script>
+
+  </body>
+
+</html>
