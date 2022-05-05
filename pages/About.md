@@ -28,3 +28,7 @@ This text is also available as a freely downloadable [pre-publication version](h
 
 > [This material](https://emilyriehl.github.io/files/elements.pdf) has been published by Cambridge University Press as *Elements of ∞-Category Theory* by Emily Riehl and Dom Verity. This pre-publication version is free to view and download for personal use only. Not for re-distribution, re-sale or use in derivative works.\
 > *© Emily Riehl and Dom Verity 2018-2021.*
+
+The [original draft](https://emilyriehl.github.io/files/more-elements.pdf), which is no longer actively being edited, contained several additional chapters, which will re-appear later in a separate volume. Warning: improvements made to the primary text have not been propagated to this volume.
+
+
