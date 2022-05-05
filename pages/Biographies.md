@@ -6,6 +6,8 @@ date: 3^rd^ May 2023
 
 ## Emily Riehl
 
+Emily Riehl is an associate professor of mathematics at Johns Hopkins University. She received her PhD from the University of Chicago and was a Benjamin Peirce and NSF postdoctoral fellow at Harvard University. She is the author of [Categorical Homotopy Theory](https://www.cambridge.org/br/academic/subjects/mathematics/geometry-and-topology/categorical-homotopy-theory) (Cambridge 2014) and [Category Theory in Context](https://store.doverpublications.com/048680903x.html) (Dover 2016), and a co-author of [Fat Chance: Probability from 0 to 1](https://www.cambridge.org/core/books/fat-chance/7B3971F26CD74B2C58E542A297F43629) (Cambridge 2019). She and her present co-author have published ten articles over the course of the past decade that develop the new mathematics appearing in this book.
+
 ## Dom Verity
 
 Dom Verity started his computational career in the early 1980s as a software
