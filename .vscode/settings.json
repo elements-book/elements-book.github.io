@@ -2,7 +2,7 @@
     "cSpell.enabled": false,
     "latex-workshop.latex.autoBuild.run": "never",
     "svg.preview.background": "transparent",
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Tomorrow Night Blue",
     "ltex.additionalRules.motherTongue": "en-GB",
     "editor.quickSuggestions": {  
         "other": "off",
