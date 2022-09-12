@@ -6,7 +6,7 @@ Homepage for projects associated with the book "Elements of ∞-Category Theory"
 
 This website is generated statically from sources prior to deployment using a tool derived from the [Hakyll](https://jaspervdj.be/hakyll/) website generator. To build or rebuild pages for publication you must first build the generator application, and that process depends on the [Haskell Tool Stack](https://docs.haskellstack.org/en/stable/):
 
-* On MacOS, the easiest way to install this is via the [Homebrew]() package manager,
+* On MacOS, the easiest way to install this is via the [Homebrew](https://brew.sh/) package manager,
 * On Linux, it should be available via the native package manager of your distribution,
 * On Windows, you can obtain the installer package for 64-bit Windows from the [Haskell Tool Stack](https://docs.haskellstack.org/en/stable/) homepage.
 
