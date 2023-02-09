@@ -7,8 +7,19 @@
         <description><![CDATA[News related to the book 'Elements of ∞-Category Theory']]></description>
         <atom:link href="https://elements-book.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sat, 12 Mar 2022 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Feb 2023 00:00:00 UT</lastBuildDate>
         <item>
+    <title>The Elements receives AAP PROSE Award</title>
+    <link>https://elements-book.github.io/posts/2023-02-09-prose.html</link>
+    <description><![CDATA[<p>Yesterday the Association of American Publishers (AAP) unveiled the 105 finalists and 40 Category winners for the 47<sup>th</sup> Annual <a href="https://proseawards.com">PROSE Awards</a> honouring scholarly works published in 2023.</p>
+<p>We are very proud to say that the <em>Elements of ∞-Category Theory</em> won the PROSE Award in the Mathematics and Statistics category. Consequently, it is now eligible for the next level of PROSE honours, the Award for Excellence in Physical Sciences and Mathematics, which will be announced in coming weeks.</p>
+<p><strong>So watch this space!!!</strong></p>
+]]></description>
+    <pubDate>Thu, 09 Feb 2023 00:00:00 UT</pubDate>
+    <guid>https://elements-book.github.io/posts/2023-02-09-prose.html</guid>
+    <dc:creator>Emily Riehl and Dom Verity</dc:creator>
+</item>
+<item>
     <title>Zen and the art of ∞-categories</title>
     <link>https://elements-book.github.io/posts/2022-03-12-zen.html</link>
     <description><![CDATA[<p>Last Friday morning I spoke in the <a href="https://topos.site/topos-colloquium/">Topos Institute Colloquium</a> on the topic of model independent and synthetic approaches to ∞-category theory. This might be considered part of our virtual book tour for <a href="https://www.cambridge.org/core/books/elements-of-category-theory/DAC48C449AB8C2C1B1E528A49D27FC6D"><em>The Elements</em></a>.</p>
